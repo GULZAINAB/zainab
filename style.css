@@ -1,0 +1,584 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(21, 21, 29);
+    color: white;
+    cursor:context-menu;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: rgb(17, 17, 22);
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li {
+    list-style:none;
+    margin:0 23px ; 
+    
+}
+nav ul li a{
+    text-decoration:none;
+    color: #808080;
+    
+}
+nav ul li a:hover{
+    color:rgb(228, 213, 213);
+    font-size: 1.7rem;
+}
+.big{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 20rem;
+    animation-name: stretch;
+    animation-duration: 2.0s;
+    animation-timing-function: ease-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-play-state: running;    
+  }
+.small{
+    width: 6px;
+    height: 6px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+  }
+ 
+.left{
+    font-size: 2rem;
+    margin-left: 30px;
+}
+.right{
+    margin-right: 40px;
+    font-size: 1.5rem;
+}
+.first{
+    display: flex;
+    justify-content: center;
+    margin:40px 0;
+    align-items: center;
+}
+.first > div{
+    width: 30%;
+}
+.leftsection{
+    font-size: 3rem;
+}
+.rightsection{
+    
+}
+.rightsection img{
+    width: 500px;
+    margin:100px 0;
+}
+.purple{
+    color: rgb(81, 16, 141);
+}
+#element1{
+    color: rgb(81, 16, 141);
+
+}
+
+.feature{
+    font-size: 22px;
+    padding: 50px 50px;
+    padding-right: 30px;
+    width: 1500px;
+
+}
+.row{
+    background-color: rgb(23, 23, 34);
+    border: 2px solid rgb(36, 32, 46);
+
+    margin-left: 200px;
+    display: flex;
+    padding: 50px 50px;
+
+   
+}
+
+.row .text_col{
+    margin-bottom: 20px;
+
+}
+.text_col p{
+
+    text-align: center;
+
+
+
+}
+.img_col{
+
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+
+}
+.txt-p1{
+  color:rgb(163, 175, 175);
+   text-align: justify;
+
+}
+.img_col img{
+    display: block;
+    width: 400px;
+    margin-bottom: 20px;
+
+}
+.feature h2{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom:30px;
+    text-align: center;
+    color: rgb(255, 255, 255)
+    
+    
+    }
+    .feature p{
+  
+        margin-bottom:30px;
+        text-align: center;
+        color: rgb(255, 255, 255)
+        
+        
+        }
+.feature h3{
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom:20px;
+    color: rgb(247, 228, 228)
+
+    
+    
+    }
+main hr{
+   border: 0;
+   background: rgb(224, 223, 223);
+   height: 3px;
+   margin: 40px 84px;
+    
+}
+.text-gray{
+color: grey;
+font-size: 1.2rem;
+}
+footer{
+background-color: rgb(17, 17, 22);
+height: 28vh      }
+.footer{
+display:flex;
+padding: 23px 122px;
+justify-content: space-evenly;
+}
+.footer ul{
+  list-style: none;
+}
+.footer > div{
+width:23px;
+}
+.footer-rights{
+color: white;
+margin: 1rem;
+justify-items: center;
+margin-right: 300px;
+}
+.about{
+padding: 50px 50px;
+padding-right: 30px;
+
+
+
+}
+.about p{
+text-align: center;
+}
+.about img{
+border: 2px solid rgb(36, 32, 46);
+margin-left: 150px;
+display: block;
+width: 100%;
+height: 100%;
+object-fit: cover;
+
+
+}
+.about h3{
+    margin-left:710px;
+    font-size:30px;
+}
+
+.container{
+
+position: relative;
+justify-content:space-evenly;
+display: flex;
+margin-left: 100px;
+margin-right: 100px;
+}
+
+.container .card{
+position: relative;
+cursor: pointer;
+
+
+}
+.container .card .face{
+width: 300px;
+height: 200px;
+transition: 0.5s;
+}
+.container .card .face.face1{
+background-color: rgb(15, 15, 20);
+position: relative;
+align-items: center;
+justify-content: center;
+display: flex;
+z-index: 1;
+transform: translateY(100px);
+}
+.container .card:hover .face.face1{
+background: rgb(14, 14, 15);
+transform: translateY(0);
+
+}
+.container .card .face.face1 .content{
+transition: 0.5s;
+}
+.container .card:hover .face.face1 .content{
+opacity: 1;
+
+}
+.container .card:hover .face.face1 .content img{
+max-width: 200px;
+
+}
+.container .card .face.face2{
+background-color: rgb(23, 23, 34);
+position: relative;
+align-items: center;
+justify-content: center;
+display: flex;
+padding: 20px;
+box-sizing: border-box;
+box-shadow: 0 20px 50px rgba(2, 1, 3, 0.8);
+transform: translateY(-100px);
+}      
+.container .card:hover .face.face2{
+transform: translateY(0);
+
+}
+.container .card:hover .face.face2 p{
+margin: 0;
+padding: 0;
+
+}
+.container .card:hover .face.face2 a{
+margin: 15px 0 0;
+display: inline-block;
+text-decoration: none;
+font-weight: 900;
+color: #998484;
+padding: 5px;
+border: 1px solid #333;
+
+}
+a.btn {
+background-color: rgb(55, 62, 70);
+border: none;
+color: white;
+padding: 12px 15px;
+cursor: pointer;
+font-size: 20px;
+margin-left: 200px;
+text-decoration: none;
+
+
+
+}
+a.btn1 {
+background-color: rgb(55, 62, 70);
+border: none;
+color: white;
+padding: 12px 15px;
+cursor: pointer;
+font-size: 20px;
+margin-left: 15px;
+text-decoration: none;
+
+
+
+}
+
+a.icons{
+text-decoration: none;
+color: rgb(145, 137, 137);
+
+}
+
+@media only screen and (max-width:600px){
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(17, 17, 22);
+        width: 900px;
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li {
+        list-style:none;
+        margin:0 23px ; 
+        
+    }
+    nav ul li a{
+        text-decoration:none;
+        color: #808080;
+        
+    }
+    nav ul li a:hover{
+        color:rgb(228, 213, 213);
+        font-size: 1.7rem;
+    }
+    .first{
+        display: flex;
+        justify-content: center;
+        margin:40px 0;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .first > div{
+        width: 30%;
+    }
+    .leftsection{
+        font-size: 5rem;
+        margin-left: 400px;
+        margin-top: 30px;
+    }
+    .rightsection{
+        
+    }
+    .rightsection img{
+        width: 300px;
+        margin-left: 200px;
+
+    }
+    .purple{
+        color: rgb(81, 16, 141);
+    }
+    #element1{
+        color: rgb(81, 16, 141);
+    
+    }
+    
+    .feature{
+        font-size: 22px;
+        padding: 50px 50px;
+        padding-right: 30px;
+        padding-left: 20px;
+        width: 800px;
+        flex-direction: column-reverse;
+
+    }
+    .row{
+        background-color: rgb(23, 23, 34);
+        border: 2px solid rgb(36, 32, 46);
+    
+        margin-left: 200px;
+        display: flex;
+        padding: 50px 50px;
+        flex-direction: column-reverse;
+    
+       
+    }
+    
+    .row .text_col{
+        margin-bottom: 20px;
+    
+    }
+    .text_col p{
+    
+        text-align: center;
+    
+    
+    
+    }
+    .img_col{
+    
+        margin-top: 40px;
+        margin-left: 40px;
+        margin-right: 40px;
+    
+    
+    }
+    .txt-p1{
+      color:rgb(163, 175, 175);
+       text-align: justify;
+    
+    }
+    .img_col img{
+        display: block;
+        width: 400px;
+        margin-bottom: 20px;
+    
+    }
+    .feature h2{
+        font-size: 50px;
+        font-weight: 600;
+        margin-bottom:30px;
+        text-align: center;
+        color: rgb(255, 255, 255)
+        
+        
+        }
+        .feature p{
+      
+            margin-bottom:30px;
+            text-align: center;
+            color: rgb(255, 255, 255)
+            
+            
+            }
+    .feature h3{
+        font-size: 50px;
+        font-weight: 600;
+        margin-bottom:20px;
+        color: rgb(247, 228, 228)
+    
+        
+        
+        }
+    main hr{
+       border: 0;
+       background: rgb(224, 223, 223);
+       height: 3px;
+       margin: 40px 84px;
+        
+    }
+    .text-gray{
+    color: grey;
+    font-size: 1.2rem;
+    }
+  h3{
+    margin-left: 300px;
+  }
+    .container{
+
+        position: relative;
+        justify-content:space-evenly;
+        display: flex;
+        margin-left: 300px;
+        margin-right: 100px;
+        flex-direction: column-reverse;
+        }
+        
+        .container .card{
+        position: relative;
+        cursor: pointer;
+        width: 300px;
+        
+        
+        }
+        .container .card .face{
+        width: 300px;
+        height: 200px;
+        transition: 0.5s;
+        }
+        .container .card .face.face1{
+        background-color: rgb(15, 15, 20);
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        z-index: 1;
+        transform: translateY(100px);
+        }
+        .container .card:hover .face.face1{
+        background: rgb(14, 14, 15);
+        transform: translateY(0);
+        
+        }
+        .container .card .face.face1 .content{
+        transition: 0.5s;
+        }
+        .container .card:hover .face.face1 .content{
+        opacity: 1;
+        
+        }
+        .container .card:hover .face.face1 .content img{
+        max-width: 200px;
+        
+        }
+        .container .card .face.face2{
+        background-color: rgb(23, 23, 34);
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        padding: 20px;
+        box-sizing: border-box;
+        box-shadow: 0 20px 50px rgba(2, 1, 3, 0.8);
+        transform: translateY(-100px);
+        }      
+        .container .card:hover .face.face2{
+        transform: translateY(0);
+        
+        }
+        .container .card:hover .face.face2 p{
+        margin: 0;
+        padding: 0;
+        
+        }
+        .container .card:hover .face.face2 a{
+        margin: 15px 0 0;
+        display: inline-block;
+        text-decoration: none;
+        font-weight: 900;
+        color: #998484;
+        padding: 5px;
+        border: 1px solid #333;
+        
+        }
+
+
+        .about{
+            padding: 50px 50px;
+            padding-right: 30px;
+            
+            
+            
+            }
+            .about p{
+            text-align:left;
+            }
+            .about img{
+            border: 2px solid rgb(36, 32, 46);
+            margin-left: 150px;
+            display: block;
+            width: 80%;
+            height: 100%;
+            object-fit: cover;
+            }   
+            .about h3{
+             margin-left: 300px;
+             font-size:30px;
+
+            }
+      
+
+
+
+}
